@@ -1,0 +1,18 @@
+CREATE TABLE FORUM(
+                      ID NUMBER(4), TITLE VARCHAR2(50), CONTENT VARCHAR2(1000),
+                      AUTHOR VARCHAR2(50), WRITTEN_DATE DATE);
+
+CREATE SEQUENCE FORUM_SEQ;
+
+
+
+BEGIN
+    for i in 1..50 loop
+            insert into FORUM (ID, TITLE, CONTENT, AUTHOR, WRITTEN_DATE)
+            values (+i, 'DUMMY_TITLE', 'DUMMY_CONTENT','JOHN', '23/01/18');
+        END LOOP;
+END;
+
+SELECT * FROM FORUM;
+
+
