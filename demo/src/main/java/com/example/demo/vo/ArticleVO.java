@@ -14,7 +14,7 @@ public class ArticleVO {
     private String title;
     private String content;
     private String author;
-    private String writtenDate;
+    private String written_Date;
 
 
 }
