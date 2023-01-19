@@ -9,4 +9,7 @@ import java.util.List;
 public interface ForumMapper {
     List<ArticleVO> getList();
 
+    ArticleVO read_content(int id);
+
+    ArticleVO edit_content(int id);
 }

@@ -1,11 +1,10 @@
 package com.example.demo.vo;
 
 import lombok.*;
-import lombok.extern.slf4j.Slf4j;
+import java.sql.Date;
 
 @Getter
 @Setter
-@Slf4j
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
@@ -14,7 +13,7 @@ public class ArticleVO {
     private String title;
     private String content;
     private String author;
-    private String written_Date;
+    private Date written_date;
 
 
 }

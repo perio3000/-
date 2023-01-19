@@ -8,14 +8,14 @@
     <title> LIST </title>
 </head>
 <body>
-    <table>
+    <table style="border: black">
         <tr>
             <th>No</th><th>TITLE</th><th>AUTHOR</th><th>DATE</th>
         </tr>
         <c:forEach var="article" items="${forum}">
         <tr>
             <td> ${article.id} </td>
-            <td> ${article.title} </td>
+            <td><a href="read_content?id=${article.id}">${article.title}</a> </td>
             <td> ${article.author} </td>
             <td> ${article.written_date} </td>
         </tr>

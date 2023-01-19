@@ -18,4 +18,18 @@ public class ForumServiceImpl implements ForumService {
 
         return forumMapper.getList();
     }
+
+    @Override
+    public ArticleVO read_content(int id) {
+        log.info("SERVICE : read()...");
+
+        return forumMapper.read_content(id);
+    }
+
+    @Override
+    public ArticleVO edit_content(int id) {
+        log.info("SERVICE : edit()...");
+
+        return forumMapper.edit_content(id);
+    }
 }
